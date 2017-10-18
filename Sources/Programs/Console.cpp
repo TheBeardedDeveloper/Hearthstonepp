@@ -61,9 +61,37 @@ namespace Hearthstonepp
 		return (str == "y" || str == "yes") ? true : (str == "n" || str == "no") ? false : InputYesNo(sentence);
 	}
 
+	//Function to search for a card based on card flavor (IE lifesteal, golden, rarity, etc)
 	void Console::SearchCard()
 	{
-
+		std::string str;	//String variable used in searching for a specific card flavor
+		std::boolean isWild;	//Boolean to determine if it's Standard or wild cards only
+		std::Card Card[];	//Object array to hold all the cards we have found with our loop
+		
+		std::cout << "Enter your card search query:\n";
+		cin >> str;
+		
+		//Loop through and find any matching results to your query
+		if (isWild) //Standard or wild?
+		{	
+		while (true)
+			{
+			//if the card has any matching query to str add that card to an array to return
+			//logic is as follows: 
+			//if (card.attribute.equals(str)) add it to the array
+			//append it to the array and increase index counter
+			
+			//if reachedEnd/null
+			//break;
+			}
+		}
+		else
+		{
+			//Loop through specific indexes for only standard cards
+		}
+		
+		//Should this function return an array full of cards that match the description or null if none are found?
+		
 	}
 
 	void Console::MakeDeck()
